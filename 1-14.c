@@ -1,14 +1,10 @@
 #include <stdio.h>
 
-#define IN 1
-#define OUT 0
-
 int main (void)
 {
-   int c, i, j;
+   int c, i;
    int nletter, ndigit, nwhite, nother;
     
-   
    nletter = ndigit = nwhite = nother = 0;
 
    while((c = getchar()) != EOF){
