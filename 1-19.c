@@ -13,11 +13,9 @@ int main(void)
    while((len = getln(line)) > 0 )
    {
 	  reverse(line, len); 
-	  printf("%s", line);     
-	   
+	  printf("%s", line);        
    }
-   //reverse(line, len);
-   //printf("%s", line);
+   
 
 
 }
@@ -41,18 +39,15 @@ int getln (char s[])
 void  reverse (char s[], int lenght)
 {
    char word[lenght];
-   int j;
+   int i;
 
-   for (j=0; j <= lenght; j++)
+   for (i=0; i <= lenght; i++)
    {
-       word[j] = s[j];   
+       word[i] = s[i];   
    }
 
    lenght = lenght - 1;
-   	
-
-   int i;
-
+   
    for(i=0; i <= (lenght); i++)
    {
       s[i] = word[lenght - i];
